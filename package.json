@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "ts-node-dev src/index.ts",
     "test": "jest --coverage"
   },
   "devDependencies": {

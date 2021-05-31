@@ -14,7 +14,11 @@ describe("Name your test suit", () => {
 });
 ```
 
-# TDD
+# Scripts
+
+`yarn test or npm test`
+
+# Use Case
 
 Test Driven Development
 
