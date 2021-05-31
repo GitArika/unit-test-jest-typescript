@@ -33,7 +33,7 @@ We create a tests/ directory with this rule.
 
 ## src
 
-`src/entities/User.ts` -> Entidade do usuário na aplicação
+`src/entities/User.ts` -> User entity on application
 
 `src/exceptions/ExceptionsConstants/index` -> Exceptions Constants using exceptions instance.
 
