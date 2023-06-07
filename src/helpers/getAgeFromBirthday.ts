@@ -2,7 +2,7 @@ import { intervalToDuration } from "date-fns";
 import DateHelper from "./dateHelper";
 import ExceptionsConstants from "../exceptions/ExceptionsConstants";
 
-export default function getAgeFromBirthday(birthday: Date): number {
+export default function getAgeFromBirthday(birthday: Date): number | undefined {
   if (!birthday) throw ExceptionsConstants.USUARIO_SEM_DATA_NASCIMENTO;
 
   let duration = intervalToDuration({
