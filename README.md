@@ -1,41 +1,43 @@
 # About
 
-Unit testing is a code control practice, providing visibility into the rules of your application.
+Unit testing is a code quality technique that provides visibility to rules inside of your application, by using it, the application code becomes easy to change, add features or refactoring.
 
-# Document your app
+## Jest testing framework
 
-use `describe` to create test suits. and `it` for each test case.
+In this case we are using `jest` javascript testing framework to run our tests and provide code coverage.
+
+Use **`describe`** to create test suits, you should give a description as a string and implement a function that will run the suit. 
+
+For each test case, use **`it`** to create a test, you should give a description as a string and impelment a function that will run the test.
+
+The rule should be a expectation, use **`expect`** to provide the value. It gives you access to a number of "matchers" as **`toEqual`** so you can assert your expectations.
 
 ```javascript
-describe("Name your test suit", () => {
-  it("1 - First test case", (done) => {
+describe("Sum operation test suit", () => {
+  it("1 - Check if 1+1 equals 2.", (done) => {
+    expect(sum(1,1)).toEqual(2);
     done();
   });
 });
 ```
 
-# Scripts
+## Scripts
 
 `yarn test or npm test`
 
-# Use Case
+## About the project
 
-Test Driven Development
+It is a simple example that is purpose to: 
 
-Problem:
-System has user;
+**Check User adulthood**
 
-You need to check User adulthood.
-
-We create a tests/ directory with this rule.
-
-# Files
+# Files structure
 
 ## src
 
 `src/entities/User.ts` -> User entity on application
 
-`src/exceptions/ExceptionsConstants/index` -> Exceptions Constants using exceptions instance.
+`src/exceptions/ExceptionsConstants/index` -> Exceptions constants using exceptions instance.
 
 `src/exceptions/index.ts` -> Exceptions object extends Error
 
@@ -45,14 +47,17 @@ We create a tests/ directory with this rule.
 
 `src/validations/checkUserAdulthood` -> Rule implementation.
 
-## tests
-
-We chose to write our tests based on our problem for use limit value check testing strategy, then refactor the whole application.
-
 `tests/checkUserAdulthood.spec.ts` -> File containing all test suit ensuring User adulthood on our app.
+
+## Test Driven Development.
+
+In test driven development, we should code test first, then code the application.
 
 ## About me
 
-Im a fullstack web developer, you can see more and contact with LinkedIn:
+I am a software engineer located in São Paulo, Brazil, you can see more about my experiences and contact me on LinkedIn:
 
-[Ariel Evangelista](https://www.linkedin.com/in/ariel-evangelista-a4677614b/). Hope you enjoy!
+[Ariel Evangelista](https://www.linkedin.com/in/ariel-evangelista-a4677614b/). 
+
+
+Hope you enjoy the code!
