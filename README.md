@@ -51,7 +51,7 @@ It is a simple example that is purpose to:
 
 ## Test Driven Development.
 
-In test driven development, we should code test first, then code the application.
+In test driven development, we should code test first, then code the app.
 
 ## About me
 
