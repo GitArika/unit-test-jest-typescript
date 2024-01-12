@@ -49,7 +49,7 @@ It is a simple example that is purpose to:
 
 `tests/checkUserAdulthood.spec.ts` -> File containing all test suit ensuring User adulthood on our app.
 
-## Test Driven Development.
+## Test Driven Development
 
 In test driven development, we should code test first, then code the app.
 
